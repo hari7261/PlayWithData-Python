@@ -1,6 +1,6 @@
 # Matplotlib Questions
 
-This folder contains 50 questions specifically focused on Matplotlib for data visualization. Each question has a corresponding file with clean and neat code.
+This folder contains 100 questions specifically focused on Matplotlib for data visualization. Each question has a corresponding file with clean and neat code.
 
 ## Questions
 
@@ -73,3 +73,15 @@ This folder contains 50 questions specifically focused on Matplotlib for data vi
 48. [Create a dashboard with multiple plots for a dataset](question_48.py)
 49. [Plot geographic data on a map using `Basemap`](question_49.py)
 50. [Create a custom visualization for a machine learning model's performance](question_50.py)
+
+### Advanced and Modern Plots
+51. [Create an interactive plot using Plotly](question_51.py)
+52. [Create a real-time data plot using Matplotlib](question_52.py)
+53. [Create an advanced customized plot with Matplotlib](question_53.py)
+54. [Integrate Matplotlib with Bokeh for interactive plots](question_54.py)
+55. [Create a plot with advanced annotations and text](question_55.py)
+56. [Create a plot with multiple subplots and shared axes](question_56.py)
+57. [Create a plot with custom color maps](question_57.py)
+58. [Create a plot with custom markers and line styles](question_58.py)
+59. [Create a plot with custom fonts and text properties](question_59.py)
+60. [Create a plot with custom legends and labels](question_60.py)
