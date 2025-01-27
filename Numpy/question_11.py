@@ -1,9 +1,11 @@
 import numpy as np
 
-array = np.arange(1, 11)
-reshaped_array = array.reshape(2, 5)
+# This code reshapes a 1D NumPy array into a 2D array of shape (2, 5)
 
-print(reshaped_array)
+array = np.arange(1, 11)  # np.arange generates values from 1 to 10
+reshaped_array = array.reshape(2, 5)  # reshape changes the shape of the array
+
+print(reshaped_array)  # print displays the reshaped array
 
 # Output:
 # [[ 1  2  3  4  5]
