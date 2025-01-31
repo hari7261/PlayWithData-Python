@@ -1,0 +1,23 @@
+name: Commit Automation
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+
+jobs:
+  commit-automation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run commit script
+        run: |
+          chmod +x ./commit_script.sh
+          ./commit_script.sh
