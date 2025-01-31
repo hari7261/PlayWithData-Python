@@ -85,3 +85,11 @@ This folder contains 100 questions specifically focused on Matplotlib for data v
 58. [Create a plot with custom markers and line styles](question_58.py)
 59. [Create a plot with custom fonts and text properties](question_59.py)
 60. [Create a plot with custom legends and labels](question_60.py)
+
+## GitHub Actions Workflow
+
+This repository includes a GitHub Actions workflow to automate the process of committing code changes. The workflow is triggered every minute and runs a script that makes 25 commits to the repository.
+
+### Automation Script
+
+The automation script, `commit_script.sh`, creates a temporary file, makes changes to it, and commits those changes 25 times. This ensures that the repository is regularly updated with new commits.
