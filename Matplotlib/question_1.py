@@ -14,4 +14,4 @@ plt.plot(x, y)  # plt.plot creates a line graph
 plt.xlabel('x')
 plt.ylabel('y')
 plt.title('Line graph of y = x^2')
-plt.show()
+plt.show()  # plt.show displays the plot
