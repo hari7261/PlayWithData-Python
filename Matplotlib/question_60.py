@@ -1,19 +1,22 @@
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 
-# Generate some data
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
+# Generate random data for x, y, and z coordinates
+x = np.random.rand(100)
+y = np.random.rand(100)
+z = np.random.rand(100)
 
-# Create a plot
-fig, ax = plt.subplots()
-ax.plot(x, y, label='Sine Wave')
+# Create a 3D scatter plot
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(x, y, z)
 
-# Customize legends and labels
-ax.legend(loc='upper right', fontsize=12, title='Legend', title_fontsize='14')
-ax.set_xlabel('x', fontsize=14, fontweight='bold', color='blue', family='serif')
-ax.set_ylabel('y', fontsize=14, fontweight='bold', color='blue', family='serif')
-ax.set_title('Plot with Custom Legends and Labels', fontsize=16, fontweight='bold', color='red', family='serif')
+# Add labels and title to the plot
+ax.set_xlabel('X-axis')
+ax.set_ylabel('Y-axis')
+ax.set_zlabel('Z-axis')
+ax.set_title('3D Scatter Plot')
 
 # Show the plot
 plt.show()
