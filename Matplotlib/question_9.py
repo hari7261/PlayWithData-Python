@@ -1,10 +1,16 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [0, 1, 2, 3, 4, 5]
-y = [0, 1, 4, 9, 16, 25]
+# Generate random data for plotting
+data = np.random.randn(100)
 
-plt.plot(x, y, linestyle='--')
-plt.xlabel('X-axis Label')
-plt.ylabel('Y-axis Label')
-plt.title('Plot with Dashed Line')
+# Create a histogram
+plt.hist(data, bins=10, edgecolor='black')
+
+# Add labels and title
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.title('Histogram of Random Data')
+
+# Show the plot
 plt.show()

@@ -1,10 +1,17 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [0, 1, 2, 3, 4, 5]
-y = [0, 1, 4, 9, 16, 25]
+# Generate random data for plotting
+x = np.random.rand(50)
+y = np.random.rand(50)
 
-plt.plot(x, y, color='red')
+# Create a scatter plot
+plt.scatter(x, y)
+
+# Add labels and title
 plt.xlabel('X-axis Label')
 plt.ylabel('Y-axis Label')
-plt.title('Plot with Red Line')
+plt.title('Scatter Plot of Random Data')
+
+# Show the plot
 plt.show()

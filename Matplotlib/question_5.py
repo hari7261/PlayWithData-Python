@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# This code generates a random dataset and creates a histogram
+
 # Generate a random dataset
 data = np.random.randn(1000)
 

@@ -1,10 +1,17 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [0, 1, 2, 3, 4, 5]
-y = [0, 1, 4, 9, 16, 25]
+# Generate random data for plotting
+x = np.arange(0, 10)
+y = np.random.randint(1, 20, size=10)
 
-plt.plot(x, y)
+# Create a bar plot
+plt.bar(x, y)
+
+# Add labels and title
 plt.xlabel('X-axis Label')
 plt.ylabel('Y-axis Label')
-plt.title('Plot with X and Y Labels')
+plt.title('Bar Plot of Random Data')
+
+# Show the plot
 plt.show()

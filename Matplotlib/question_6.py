@@ -1,8 +1,17 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [0, 1, 2, 3, 4, 5]
-y = [0, 1, 4, 9, 16, 25]
+# Generate random data for plotting
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
 
+# Create a line plot
 plt.plot(x, y)
-plt.title('Title of the Plot')
+
+# Add labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Line Plot of Sine Wave')
+
+# Show the plot
 plt.show()
